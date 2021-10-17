@@ -6,7 +6,7 @@ namespace ParqueDiversiones
 {
     class AtraccionAcuatica:Atraccion
     {
-        public AtraccionAcuatica(string codigo, string nombre, int limite_edad, float limite_estatura, int costo, int cantidad_ingresos, List<Usuario> usuarios_recibidos) : base(codigo, nombre, limite_edad, limite_estatura, costo, cantidad_ingresos, usuarios_recibidos)
+        public AtraccionAcuatica(string codigo, string nombre, int limite_edad, float limite_estatura, int costo) : base(codigo, nombre, limite_edad, limite_estatura, costo)
         {
 
         }

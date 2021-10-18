@@ -1,0 +1,13 @@
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.csproj.AssemblyReference.cache
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.AssemblyInfoInputs.cache
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.AssemblyInfo.cs
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.csproj.CoreCompileInputs.cache
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.exe
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.deps.json
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.runtimeconfig.json
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.runtimeconfig.dev.json
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.dll
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.pdb
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.dll
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.pdb
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.genruntimeconfig.cache

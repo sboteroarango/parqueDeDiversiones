@@ -1,4 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Collections;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace ParqueDiversiones
 {
@@ -6,7 +11,10 @@ namespace ParqueDiversiones
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World");
+            List<Atraccion> listaAtracciones = AdministradorArchivos.generarAtracciones();
+           
+            Console.WriteLine(listaAtracciones[0].Limite_estatura);
+         
             
         }
     }

@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Collections;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace ParqueDiversiones
 {
-    abstract class Atraccion
+    class Atraccion
     {
         private string codigo;
         private string nombre;

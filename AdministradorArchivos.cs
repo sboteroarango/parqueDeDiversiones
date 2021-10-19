@@ -9,10 +9,27 @@ namespace ParqueDiversiones
 {
 	class AdministradorArchivos
 	{
-        public static List<Atraccion> generarAtracciones()
+        //TODO hacer que lines si se lea bien
+        public static List<Atraccion> generarAtraccionesDeTipo(string tipo)
         {
-            //TODO hacer que esto lo haga con cada tipo de atraccion
-            string[] lines = File.ReadAllLines("textoAtracciones.txt");
+            switch(tipo)
+            {
+                case "AC" :
+                {
+                    string[] lines = File.ReadAllLines("textoAtraccionesAcuaticas.txt");
+                    break;
+                }
+                case "MC" :
+                {
+                    string[] lines = File.ReadAllLines("textoAtraccionesMecanicas.txt");
+                    break;
+                }
+                case "VI" :
+                {
+                    string[] lines = File.ReadAllLines("textoAtraccionesVirtuales.txt");
+                    break;
+                }
+            }
             List<Atraccion> listaDeAtracciones = new List<Atraccion>();
             foreach (string line in lines)
             {

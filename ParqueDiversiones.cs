@@ -11,7 +11,9 @@ namespace ParqueDiversiones
     {
         static void Main(string[] args)
         {
-            List<Atraccion> listaAtracciones = AdministradorArchivos.generarAtracciones();
+            List<AtraccionMecanica> listaAtracciones = AdministradorArchivos.generarAtraccionesMecanicas();
+            List<AtraccionAcuatica> listaAtracciones1 = AdministradorArchivos.generarAtraccionesAcuaticas();
+            List<AtraccionVirtual> listaAtracciones2 = AdministradorArchivos.generarAtraccionesVirtuales();
            
             Console.WriteLine(listaAtracciones[0].Limite_estatura);
          

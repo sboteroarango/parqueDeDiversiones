@@ -101,18 +101,18 @@ namespace ParqueDiversiones
                 Console.WriteLine("Nombre completo de la persona: ");
                 string nombre = Console.ReadLine();
                 Console.WriteLine("Ingrese su ID: ");
-                int id;
-                bool ider = int.TryParse(Console.ReadLine(), out id);
+                string id = Console.ReadLine();
+                
                 Console.WriteLine($"{nombre}, ¿Que atraccion manejara?");
                 Console.WriteLine("Ingrese el codigo de la ataccion: ");
-                int codigoAtrac;
-                bool ider2 = int.TryParse(Console.ReadLine(), out codigoAtrac);
+                string codigoAtrac = Console.ReadLine();
+                
                 Atraccion atraccionManejar;
-                if (listaAtracciones.Exists(x => x.codigo == codigoAtrac))
+                if (listaAtracciones.Exists(x => x.Codigo == codigoAtrac))
                 //if((listaAtracciones.Exists(x...)) or (listaAtracciones1.Exists(x...))or(listaAtracciones2.Exists(x..)))
                 {
 
-                    atraccionManejar = ListaCuentasRegi.Find(x => x.codigo == codigoAtrac);
+                    atraccionManejar = listaAtracciones.Find(x => x.Codigo == codigoAtrac);
 
 
                     Empleado empleadoX = new Empleado(id, nombre, atraccionManejar);
@@ -137,7 +137,19 @@ namespace ParqueDiversiones
                     Console.WriteLine(" 3. Atraccion virtual.");
                     Console.WriteLine(" 4. Salir.");
 
-                switch (opcion)
+
+
+            do
+
+            {
+                Console.WriteLine("Porfavor, ingrese una opcion valida");
+                ret = int.TryParse(Console.ReadLine(), out opcion);
+
+            }
+
+            while (!ret);
+
+            switch (opcion)
                 {
                     case 1:
                     Console.WriteLine("¿Cuantas atracciones acuaticas desea crear?");
@@ -159,16 +171,16 @@ namespace ParqueDiversiones
                         bool limite_edad_aNum = int.TryParse(Console.ReadLine(), out limite_edad);
                         Console.WriteLine("¿Cual es el limite de estatura?");
                         bool limite_estatura_aNum = float.TryParse(Console.ReadLine(), out limite_estatura);
-                        Console.WriteLine("¿Cual es el limite de edad?");
+                        Console.WriteLine("¿Cual es el costo?");
                         bool costo_aNum = int.TryParse(Console.ReadLine(), out costo);
-                        AtraccionAcuatica atraccionAcX = new AtraccionAcuatica(codigo, nombre, limite_edad, limite_edad, limite_estatura, costo);
+                        AtraccionAcuatica atraccionAcX = new AtraccionAcuatica(codigo, nombre, limite_edad, limite_estatura, costo);
                         listaAtracciones1.Add(atraccionAcX);
                     }
                         break;
                     case 2:
                     Console.WriteLine("¿Cuantas atracciones mecanicas desea crear?");
                     int CantidadAm;
-                    bool tor = int.TryParse(Console.ReadLine(), out CantidadAm);
+                    bool tor2 = int.TryParse(Console.ReadLine(), out CantidadAm);
                     for (int i = 0; i < CantidadAm; i++)
                     {
 
@@ -185,16 +197,16 @@ namespace ParqueDiversiones
                         bool limite_edad_aNum = int.TryParse(Console.ReadLine(), out limite_edad);
                         Console.WriteLine("¿Cual es el limite de estatura?");
                         bool limite_estatura_aNum = float.TryParse(Console.ReadLine(), out limite_estatura);
-                        Console.WriteLine("¿Cual es el limite de edad?");
+                        Console.WriteLine("¿Cual es el costo?");
                         bool costo_aNum = int.TryParse(Console.ReadLine(), out costo);
-                        AtraccionMecanica atraccionAmX = new AtraccionMecanica(codigo, nombre, limite_edad, limite_edad, limite_estatura, costo);
+                        AtraccionMecanica atraccionAmX = new AtraccionMecanica(codigo, nombre, limite_edad,  limite_estatura, costo);
                         listaAtracciones.Add(atraccionAmX);
                     }
                     break;
                     case 3:
                     Console.WriteLine("¿Cuantas atracciones virtuales desea crear?");
                     int CantidadAv;
-                    bool tor = int.TryParse(Console.ReadLine(), out CantidadAv);
+                    bool tor1 = int.TryParse(Console.ReadLine(), out CantidadAv);
                     for (int i = 0; i < CantidadAv; i++)
                     {
 
@@ -211,9 +223,9 @@ namespace ParqueDiversiones
                         bool limite_edad_aNum = int.TryParse(Console.ReadLine(), out limite_edad);
                         Console.WriteLine("¿Cual es el limite de estatura?");
                         bool limite_estatura_aNum = float.TryParse(Console.ReadLine(), out limite_estatura);
-                        Console.WriteLine("¿Cual es el limite de edad?");
+                        Console.WriteLine("¿Cual es el costo?");
                         bool costo_aNum = int.TryParse(Console.ReadLine(), out costo);
-                        AtraccionVirtual atraccionAvX = new AtraccionVirtual(codigo, nombre, limite_edad, limite_edad, limite_estatura, costo);
+                        AtraccionVirtual atraccionAvX = new AtraccionVirtual(codigo, nombre, limite_edad, limite_estatura, costo);
                         listaAtracciones2.Add(atraccionAvX);
                     }
                     break;

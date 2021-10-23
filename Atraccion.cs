@@ -34,7 +34,13 @@ namespace ParqueDiversiones
         public int Limite_edad { get => limite_edad; set => limite_edad = value; }
         public float Limite_estatura { get => limite_estatura; set => limite_estatura = value; }
         public int Costo { get => costo; set => costo = value; }
+
+        public virtual string GenerarStringConInfoDeAtraccion(Atraccion atraccion)
+        {
+            return ($"Su codigo es {atraccion.Codigo}, Su nombre es {atraccion.Nombre}, su limite de edad es {atraccion.Limite_edad}, su limite de estatura es {atraccion.Limite_estatura} y su costo es {atraccion.Costo}");
+        }
       
         
     }
 }
+//generar un reporte de costos en cualquier momento del día,, Ver la información del usuario (incluye ver la lista de atracciones a las cuales ha ingresado el usuario y el saldo de la manilla). (Simón)

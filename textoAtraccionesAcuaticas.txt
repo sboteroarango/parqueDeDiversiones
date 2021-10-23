@@ -1,1 +1,4 @@
 AC001,Popeye & Bluto´s Bilge-Rat Barges,14,1,20,15000
+AC002,Dudley Do-Right´s Ripsaw Falls,12,1,10,16000
+AC003,One Fish-Two Fish-Red Fish-Blue Fish,6,0,50,12000
+AC004,Krakatau Aqua Coaster,12,1,20,18000

@@ -1,1 +1,4 @@
 MC001,Hollywood Rip Ride Rockit,16,1,40,25000
+MC002,Flight of the Hippogriff,12,1,00,15000
+MC003,The Incredible  Hulk Coaster,16,1,40,20000
+MC004,The Cat in the Hat,8,0,70,12000

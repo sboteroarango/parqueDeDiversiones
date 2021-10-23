@@ -13,5 +13,9 @@ namespace ParqueDiversiones
         {
 
         }
+        public override string GenerarStringConInfoDeAtraccion(Atraccion atraccion)
+        {
+            return base.GenerarStringConInfoDeAtraccion(atraccion);
+        }
     }
 }

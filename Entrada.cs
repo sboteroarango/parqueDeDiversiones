@@ -11,6 +11,8 @@ namespace ParqueDiversiones
 	{
 		private int costo;
 		private List<Manilla> manillas= new List<Manilla>();
+		private Atraccion atraccion = new Atraccion();
+	      
 
 		public Entrada()
 		{

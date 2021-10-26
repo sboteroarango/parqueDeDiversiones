@@ -24,3 +24,17 @@ C:\Users\user\Desktop\Carpetas\Universidad\Programacion O.O\ParqueDiversiones\pa
 C:\Users\user\Desktop\Carpetas\Universidad\Programacion O.O\ParqueDiversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.dll
 C:\Users\user\Desktop\Carpetas\Universidad\Programacion O.O\ParqueDiversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.pdb
 C:\Users\user\Desktop\Carpetas\Universidad\Programacion O.O\ParqueDiversiones\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.genruntimeconfig.cache
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.csproj.AssemblyReference.cache
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.AssemblyInfoInputs.cache
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.AssemblyInfo.cs
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.csproj.CoreCompileInputs.cache
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.dll
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.pdb
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.exe
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.deps.json
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.runtimeconfig.json
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.runtimeconfig.dev.json
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.dll
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.pdb
+C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.genruntimeconfig.cache

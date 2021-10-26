@@ -16,7 +16,10 @@ namespace ParqueDiversiones
         private int costo;
         private List<Entrada> entradas = new List<Entrada>();
       
-       
+       public Atraccion()
+        {
+
+        }
 
         public Atraccion(string codigo, string nombre, int limite_edad, float limite_estatura, int costo)
         {
@@ -39,8 +42,41 @@ namespace ParqueDiversiones
         {
             return ($"Su codigo es {atraccion.Codigo}, Su nombre es {atraccion.Nombre}, su limite de edad es {atraccion.Limite_edad}, su limite de estatura es {atraccion.Limite_estatura} y su costo es {atraccion.Costo}");
         }
-      
-        
+
+        public String HacerUsoDeAtraccion(Manilla manilla)
+        {
+            //Definimos algunas variables que nos van a servir de apoyo en el metodo - se define aqui porque no se requiere en ningun otro lado -
+            String Uso = "";
+            int CodigoDeUso;
+
+            // Vamos primero a verificar la edad para saber si podemos o no hacer uso de la atraccion.
+            if (Limite_edad <= Manilla.
+            {
+                //verificamos que tenga saldo suficiente para acceder a la atraccion.
+                if (saldo >= atraccion.Costo)
+                {
+                    saldo = saldo - atraccion.Costo;
+
+                }
+                //si no tiene saldo
+                else
+                {
+
+                    Uso = "Saldo insuficiente";
+                }
+
+                Uso = "Tiene permitido el ingreso, se debito el costo de su saldo.";
+
+            }
+            //si no tiene la edad: 
+            else
+            {
+                Uso = "No tiene permitido el ingreso";
+            }
+
+
+            return Uso;
+        }
     }
 }
 //generar un reporte de costos en cualquier momento del día,, Ver la información del usuario (incluye ver la lista de atracciones a las cuales ha ingresado el usuario y el saldo de la manilla). (Simón)

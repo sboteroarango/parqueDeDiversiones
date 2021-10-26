@@ -22,6 +22,7 @@ namespace ParqueDiversiones
             this.estatura = estatura;
             this.nombre_completo = nombre_completo;
             this.saldo = saldo;
+
           
         }
 
@@ -29,6 +30,7 @@ namespace ParqueDiversiones
         public float Estatura { get => estatura; set => estatura = value; }
         public string Nombre_completo { get => nombre_completo; set => nombre_completo = value; }
         public int Saldo {get => saldo; set => saldo = value;}
+        
         
        
     }

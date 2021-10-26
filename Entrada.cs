@@ -10,8 +10,7 @@ namespace ParqueDiversiones
 	class Entrada
 	{
 		private int costo;
-		private List<Manilla> manillas= new List<Manilla>();
-		private Atraccion atraccion = new Atraccion();
+		Manilla manilla;
 	      
 
 		public Entrada()
@@ -20,7 +19,7 @@ namespace ParqueDiversiones
 		}
 
 		public int Costo{ get => costo; set => costo=value;}
-		private List<Manilla> Manillas{get => manillas; set => manillas=value;}
+		private Manilla Manilla{ get => manilla; set => manilla=value;}
 
 
 	}

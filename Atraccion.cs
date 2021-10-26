@@ -43,39 +43,37 @@ namespace ParqueDiversiones
             return ($"Su codigo es {atraccion.Codigo}, Su nombre es {atraccion.Nombre}, su limite de edad es {atraccion.Limite_edad}, su limite de estatura es {atraccion.Limite_estatura} y su costo es {atraccion.Costo}");
         }
 
-        public String HacerUsoDeAtraccion(Manilla manilla)
+        public void SerUsada(Manilla manilla)
         {
-            //Definimos algunas variables que nos van a servir de apoyo en el metodo - se define aqui porque no se requiere en ningun otro lado -
-            String Uso = "";
-            int CodigoDeUso;
 
-            // Vamos primero a verificar la edad para saber si podemos o no hacer uso de la atraccion.
-            if (Limite_edad <= Manilla.
+            if (manilla.Edad >= Limite_edad &&  manilla.Saldo >= Costo && manilla.Estatura >= Limite_estatura)
             {
-                //verificamos que tenga saldo suficiente para acceder a la atraccion.
-                if (saldo >= atraccion.Costo)
-                {
-                    saldo = saldo - atraccion.Costo;
+                //puede ingresar:
+                // crear metodo que cuenta cuantas veces a ingresado a una atracción
+                //se crea una entrada, se agrega esa entrada en el que el costo de la entrada va a variar 
+                // si el usuario ha ingresado más de 2 veces a una virtual, se le cobra el costo + el 5% del costo
+                // si el usuario ha ingresado más de 2 veces a esta mecánica, se le da un descuento del 8%
+                // si el usuario está entre 45 y 50 años, se le da un descuento del 7%
 
-                }
-                //si no tiene saldo
-                else
-                {
-
-                    Uso = "Saldo insuficiente";
-                }
-
-                Uso = "Tiene permitido el ingreso, se debito el costo de su saldo.";
-
+                
+            
             }
-            //si no tiene la edad: 
             else
             {
-                Uso = "No tiene permitido el ingreso";
+                Console.WriteLine("no tiene permitido el ingreso");
             }
+        }
 
+        public int CantidadDeVecesIngresadas(Manilla manilla)
+        {
+            int contador = 0;
+            foreach (Entrada entrada in this.entradas)
+            {
+                if(entrada.Manilla == manilla)
+                {
 
-            return Uso;
+                }
+            }
         }
     }
 }

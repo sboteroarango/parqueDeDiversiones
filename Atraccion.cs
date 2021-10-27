@@ -43,38 +43,7 @@ namespace ParqueDiversiones
             return ($"Su codigo es {atraccion.Codigo}, Su nombre es {atraccion.Nombre}, su limite de edad es {atraccion.Limite_edad}, su limite de estatura es {atraccion.Limite_estatura} y su costo es {atraccion.Costo}");
         }
 
-        public void SerUsada(Manilla manilla)
-        {
-
-            if (manilla.Edad >= Limite_edad &&  manilla.Saldo >= Costo && manilla.Estatura >= Limite_estatura)
-            {
-                //puede ingresar:
-                // crear metodo que cuenta cuantas veces a ingresado a una atracción
-                //se crea una entrada, se agrega esa entrada en el que el costo de la entrada va a variar 
-                // si el usuario ha ingresado más de 2 veces a una virtual, se le cobra el costo + el 5% del costo
-                // si el usuario ha ingresado más de 2 veces a esta mecánica, se le da un descuento del 8%
-                // si el usuario está entre 45 y 50 años, se le da un descuento del 7%
-
-                
-            
-            }
-            else
-            {
-                Console.WriteLine("no tiene permitido el ingreso");
-            }
-        }
-
-        public int CantidadDeVecesIngresadas(Manilla manilla)
-        {
-            int contador = 0;
-            foreach (Entrada entrada in this.entradas)
-            {
-                if(entrada.Manilla == manilla)
-                {
-
-                }
-            }
-        }
+        public abstract void SerUsada(Manilla manilla);
     }
 }
 //generar un reporte de costos en cualquier momento del día,, Ver la información del usuario (incluye ver la lista de atracciones a las cuales ha ingresado el usuario y el saldo de la manilla). (Simón)

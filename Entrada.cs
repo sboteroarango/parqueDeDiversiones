@@ -25,7 +25,7 @@ namespace ParqueDiversiones
 		}
 
 		public int Costo{ get => costo; set => costo=value;}
-		private Manilla Manilla{ get => manilla; set => manilla=value;}
+		public Manilla Manilla{ get => manilla; set => manilla=value;}
 
 
 	}

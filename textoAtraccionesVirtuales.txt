@@ -1,0 +1,4 @@
+VI001,Simpsons Ride,8,1,0,12000
+VI002,Revenge of the Mummy,12,1,30,15000
+VI003,Harry Potter and the escape from Gringotts,12,1,30,18000
+VI004,Transformer Ride –3D,12,1,20,18000

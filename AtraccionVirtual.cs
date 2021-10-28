@@ -22,11 +22,22 @@ namespace ParqueDiversiones
         {
             if (manilla.Edad >= Limite_edad &&  manilla.Saldo >= Costo && manilla.Estatura >= Limite_estatura)
             {
-                //puede ingresar:
-                // crear metodo que cuenta cuantas veces a ingresado a una atracción
-                //se crea una entrada, se agrega esa entrada en el que el costo de la entrada va a variar 
-                // si el usuario ha ingresado más de 2 veces a una virtual, se le cobra el costo + el 5% del costo
-                //a esa manilla se le resta ese costo
+                int cantidadDeVecesIngresadasDeManilla = 0;
+                foreach (Entrada entrada in this.Entradas)
+                {
+                    if(entrada.Manilla == manilla)
+                    {
+                        cantidadDeVecesIngresadasDeManilla += 1;
+                    }
+                    
+                }
+                
+                if(this.Costo <= 15000 && cantidadDeVecesIngresadasDeManilla>2)
+                {
+                    Entrada entrada = new Entrada((int)(this.Costo+(this.Costo*5/100)),manilla);
+                    this.Entradas.Add(entrada);
+                    manilla.Saldo -= (int)(this.Costo+(this.Costo*5/100));
+                }
             }
             else
             {

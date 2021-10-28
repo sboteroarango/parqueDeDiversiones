@@ -13,9 +13,9 @@ namespace ParqueDiversiones
         {
 
         }
-        public override string GenerarStringConInfoDeAtraccion(Atraccion atraccion)
+        public override string GenerarStringConInfoDeAtraccion( )
         {
-            return base.GenerarStringConInfoDeAtraccion(atraccion);
+            return base.GenerarStringConInfoDeAtraccion();
         }
 
         public override void SerUsada(Manilla manilla)

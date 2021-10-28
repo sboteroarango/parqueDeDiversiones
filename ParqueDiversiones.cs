@@ -11,9 +11,9 @@ namespace ParqueDiversiones
     {
         public static void Main(string[] args)
         {
-            List<AtraccionMecanica> listaAtracciones = AdministradorArchivos.generarAtraccionesMecanicas();
-            List<AtraccionAcuatica> listaAtracciones1 = AdministradorArchivos.generarAtraccionesAcuaticas();
-            List<AtraccionVirtual> listaAtracciones2 = AdministradorArchivos.generarAtraccionesVirtuales();
+            List<AtraccionMecanica> listaAtraccionesMecanicas = AdministradorArchivos.generarAtraccionesMecanicas();
+            List<AtraccionAcuatica> listaAtraccionesAcuaticas = AdministradorArchivos.generarAtraccionesAcuaticas();
+            List<AtraccionVirtual> listaAtraccionesVirtuales = AdministradorArchivos.generarAtraccionesVirtuales();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
 
 
@@ -42,19 +42,19 @@ namespace ParqueDiversiones
                 switch (opcion)
                 {
                     case 1:
-                        RegistrarEmpleados(ListaEmpleadosRegi, listaAtracciones, listaAtracciones1, listaAtracciones2);
+                        RegistrarEmpleados(ListaEmpleadosRegi, listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
                     case 2:
-                        RegistrarNuevasAtracciones(listaAtracciones, listaAtracciones1, listaAtracciones2);
+                        RegistrarNuevasAtracciones(listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
                     case 3:
-                     
+                       
                         break;
                     case 4:
                
                         break;
                     case 5:
-                        
+                        MostrarInfoAtrac(listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
                     case 6:
                       
@@ -76,21 +76,22 @@ namespace ParqueDiversiones
             Console.WriteLine("       ███████║░░░██║░░░██████╔╝███████║██║░░╚═╝██║░░╚═╝██║██║░░██║██╔██╗██║█████╗░░╚█████╗░");
             Console.WriteLine("       ██╔══██║░░░██║░░░██╔══██╗██╔══██║██║░░██╗██║░░██╗██║██║░░██║██║╚████║██╔══╝░░░╚═══██╗");
             Console.WriteLine("       ██║░░██║░░░██║░░░██║░░██║██║░░██║╚█████╔╝╚█████╔╝██║╚█████╔╝██║░╚███║███████╗██████╔╝");
-            Console.WriteLine("       ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝╚═════╝░");
-            Console.WriteLine("        /   Seleccione una de las siguientes opciones:            \\          ");
-            Console.WriteLine("       /   1. Registrar empleados.                                 \\         ");
-            Console.WriteLine("      /    2. Registrar atracciones.                                \\        ");
-            Console.WriteLine("     /     3. Crear cuentas bancarias.                               \\       ");
-            Console.WriteLine("    /      4. Mostrar las cuentas bancarias.                          \\      ");
-            Console.WriteLine("   /       5. Consignar dinero.                                        \\     ");
-            Console.WriteLine("  /        6. Retirar dinero.                                           \\    ");
-            Console.WriteLine(" /         7. Fin de mes.                                                \\   ");
-            Console.WriteLine("/_________________________________________________________________________\\\n");
+            Console.WriteLine("       ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚═╝░╚════╝░░╚════╝░╚═╝░╚════╝░╚═╝░░╚══╝╚══════╝╚═════╝░\n");
+            Console.WriteLine("         /   Seleccione una de las siguientes opciones:            \\           ");
+            Console.WriteLine("        /   1. Registrar empleados.                                 \\          ");
+            Console.WriteLine("       /    2. Registrar atracciones.                                \\         ");
+            Console.WriteLine("      /     3. Comprar manilla.                                       \\        ");
+            Console.WriteLine("     /      4. Recargar la manilla.                                    \\       ");
+            Console.WriteLine("    /       5. Consultar informacion de una atraccion.                  \\      ");
+            Console.WriteLine("   /        6. Ingresar a una atraccion.                                 \\     ");
+            Console.WriteLine("  /         7. Ver la informacion del usuario.                            \\    ");
+            Console.WriteLine(" /          8. Generar reporte final.                                      \\   ");
+            Console.WriteLine("/___________________________________________________________________________\\\n ");
 
 
         }
 
-        public static void RegistrarEmpleados(List<Empleado> ListaEmpleadosRegi, List<AtraccionMecanica> listaAtracciones, List<AtraccionAcuatica> listaAtracciones1, List<AtraccionVirtual> listaAtracciones2)
+        public static void RegistrarEmpleados(List<Empleado> ListaEmpleadosRegi, List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
         {
 
             Console.WriteLine("¿Cuantos empleados desea registar?");
@@ -109,12 +110,20 @@ namespace ParqueDiversiones
                 string codigoAtrac = Console.ReadLine();
                 
                 Atraccion atraccionManejar;
-                if (listaAtracciones.Exists(x => x.Codigo == codigoAtrac))
+                if ((listaAtraccionesMecanicas.Exists(x => x.Codigo == codigoAtrac)) || (listaAtraccionesAcuaticas.Exists(x => x.Codigo == codigoAtrac)) || (listaAtraccionesVirtuales.Exists(x => x.Codigo == codigoAtrac)))
                 //if((listaAtracciones.Exists(x...)) or (listaAtracciones1.Exists(x...))or(listaAtracciones2.Exists(x..)))
                 {
 
-                    atraccionManejar = listaAtracciones.Find(x => x.Codigo == codigoAtrac);
-
+                    atraccionManejar = listaAtraccionesMecanicas.Find(x => x.Codigo == codigoAtrac);
+                    if (atraccionManejar == null)
+                    {
+                        atraccionManejar = listaAtraccionesAcuaticas.Find(x => x.Codigo == codigoAtrac);
+                        if (atraccionManejar == null)
+                        {
+                            atraccionManejar = listaAtraccionesVirtuales.Find(x => x.Codigo == codigoAtrac);
+                        }
+                    }
+                   
 
                     Empleado empleadoX = new Empleado(id, nombre, atraccionManejar);
 
@@ -125,7 +134,7 @@ namespace ParqueDiversiones
             }
         }
 
-        public static void RegistrarNuevasAtracciones(List<AtraccionMecanica> listaAtracciones, List<AtraccionAcuatica> listaAtracciones1, List<AtraccionVirtual> listaAtracciones2)
+        public static void RegistrarNuevasAtracciones(List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
         {
 
             int opcion;
@@ -175,7 +184,7 @@ namespace ParqueDiversiones
                         Console.WriteLine("¿Cual es el costo?");
                         bool costo_aNum = int.TryParse(Console.ReadLine(), out costo);
                         AtraccionAcuatica atraccionAcX = new AtraccionAcuatica(codigo, nombre, limite_edad, limite_estatura, costo);
-                        listaAtracciones1.Add(atraccionAcX);
+                        listaAtraccionesAcuaticas.Add(atraccionAcX);
                     }
                         break;
                     case 2:
@@ -201,7 +210,7 @@ namespace ParqueDiversiones
                         Console.WriteLine("¿Cual es el costo?");
                         bool costo_aNum = int.TryParse(Console.ReadLine(), out costo);
                         AtraccionMecanica atraccionAmX = new AtraccionMecanica(codigo, nombre, limite_edad,  limite_estatura, costo);
-                        listaAtracciones.Add(atraccionAmX);
+                        listaAtraccionesMecanicas.Add(atraccionAmX);
                     }
                     break;
                     case 3:
@@ -227,7 +236,7 @@ namespace ParqueDiversiones
                         Console.WriteLine("¿Cual es el costo?");
                         bool costo_aNum = int.TryParse(Console.ReadLine(), out costo);
                         AtraccionVirtual atraccionAvX = new AtraccionVirtual(codigo, nombre, limite_edad, limite_estatura, costo);
-                        listaAtracciones2.Add(atraccionAvX);
+                        listaAtraccionesVirtuales.Add(atraccionAvX);
                     }
                     break;
 
@@ -235,6 +244,51 @@ namespace ParqueDiversiones
                     Console.ReadLine();
                         break;
                 }             
+        }
+
+        public static void MostrarInfoAtrac(List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
+        {
+            Console.WriteLine("Ingrese el codigo de la atraccion a informar: ");
+            string codigoAtracInfo = Console.ReadLine();
+
+            Atraccion atraccionInfo;
+
+            if ((listaAtraccionesMecanicas.Exists(x => x.Codigo == codigoAtracInfo)) || (listaAtraccionesAcuaticas.Exists(x => x.Codigo == codigoAtracInfo)) || (listaAtraccionesVirtuales.Exists(x => x.Codigo == codigoAtracInfo)))
+            //if((listaAtracciones.Exists(x...)) or (listaAtracciones1.Exists(x...))or(listaAtracciones2.Exists(x..)))
+            {
+
+                atraccionInfo = listaAtraccionesMecanicas.Find(x => x.Codigo == codigoAtracInfo);
+
+                if(atraccionInfo == null)
+                {
+                    atraccionInfo = listaAtraccionesAcuaticas.Find(x => x.Codigo == codigoAtracInfo);
+
+                    if(atraccionInfo == null)
+                    {
+                        atraccionInfo = listaAtraccionesVirtuales.Find(x => x.Codigo == codigoAtracInfo);
+                        if (atraccionInfo == null)
+                        {
+                            Console.WriteLine("\nEl codigo ingresado no existe.\n");
+                        }
+                    }
+                }
+               
+                
+
+
+                string texto = atraccionInfo.GenerarStringConInfoDeAtraccion();
+
+                Console.WriteLine(texto);
+
+
+            }
+
+            else
+            {
+                Console.WriteLine("\nEl codigo ingresado no existe.\n");
+            }
+            
+
         }
     }
 }

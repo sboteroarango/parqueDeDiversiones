@@ -39,9 +39,9 @@ namespace ParqueDiversiones
         public int Costo { get => costo; set => costo = value; }
         public List<Entrada> Entradas { get => entradas; }
 
-        public virtual string GenerarStringConInfoDeAtraccion(Atraccion atraccion)
+        public virtual string GenerarStringConInfoDeAtraccion()
         {
-            return ($"Su codigo es {atraccion.Codigo}, Su nombre es {atraccion.Nombre}, su limite de edad es {atraccion.Limite_edad}, su limite de estatura es {atraccion.Limite_estatura} y su costo es {atraccion.Costo}");
+            return ($"\nSu codigo es {this.Codigo}, su nombre es {this.Nombre}, su limite de edad es {this.Limite_edad} años, su limite de estatura es {this.Limite_estatura}cm y su costo para entrar es de ${this.Costo} pesos. \n");
         }
 
         public abstract void SerUsada(Manilla manilla);

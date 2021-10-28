@@ -23,6 +23,19 @@ namespace ParqueDiversiones
             if (manilla.Edad >= Limite_edad &&  manilla.Saldo >= Costo && manilla.Estatura >= Limite_estatura)
             {
                 //puede ingresar:
+                if (manilla.Edad>= 45 && manilla.Edad <=50)
+                {
+                    Entrada entrada = new Entrada((int)(this.Costo-(this.Costo*7/100)),manilla);
+                    this.Entradas.Add(entrada);
+                    manilla.Saldo -= (int)(this.Costo-(this.Costo*7/100));
+
+                }else
+                {
+                    Entrada entrada = new Entrada(this.Costo,manilla);
+                    this.Entradas.Add(entrada);
+                    manilla.Saldo -= this.Costo;
+
+                }
                 //se crea una entrada, se agrega esa entrada en el que el costo de la entrada va a variar 
                 // si el usuario está entre 45 y 50 años, se le da un descuento del 7% en la atracción acúatica
                 //a esa manilla se le resta ese costo

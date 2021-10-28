@@ -17,6 +17,12 @@ namespace ParqueDiversiones
 		{
 
 		}
+		public Entrada(int costo,Manilla manilla)
+		{
+			this.costo = costo;
+			this.manilla = manilla;
+
+		}
 
 		public int Costo{ get => costo; set => costo=value;}
 		private Manilla Manilla{ get => manilla; set => manilla=value;}

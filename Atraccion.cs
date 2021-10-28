@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ParqueDiversiones
 {
-    class Atraccion
+    abstract class Atraccion
     {
         private string codigo;
         private string nombre;
@@ -37,6 +37,7 @@ namespace ParqueDiversiones
         public int Limite_edad { get => limite_edad; set => limite_edad = value; }
         public float Limite_estatura { get => limite_estatura; set => limite_estatura = value; }
         public int Costo { get => costo; set => costo = value; }
+        public List<Entrada> Entradas { get => entradas; }
 
         public virtual string GenerarStringConInfoDeAtraccion(Atraccion atraccion)
         {

@@ -15,6 +15,8 @@ namespace ParqueDiversiones
             List<AtraccionAcuatica> listaAtracciones1 = AdministradorArchivos.generarAtraccionesAcuaticas();
             List<AtraccionVirtual> listaAtracciones2 = AdministradorArchivos.generarAtraccionesVirtuales();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
+            //no está encontrando el texto de atracciones mecánicas
+
 
             int opcion;
 

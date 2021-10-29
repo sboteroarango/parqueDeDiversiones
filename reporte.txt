@@ -1,0 +1,3 @@
+atraccion : Flight of the Hippogriff
+cantidad de entradas : 4
+ingresos : 60000 pesos

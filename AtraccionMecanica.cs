@@ -49,6 +49,10 @@ namespace ParqueDiversiones
                 Console.WriteLine("no tiene permitido el ingreso");
             }
         }
+        public override void GenerarReporte()
+        {
+            base.GenerarReporte();
+        }
 
     }
 }

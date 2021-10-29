@@ -45,6 +45,19 @@ namespace ParqueDiversiones
         }
 
         public abstract void SerUsada(Manilla manilla);
+
+        public virtual void GenerarReporte()
+        {
+            int ingresos = 0;
+            foreach (Entrada entrada in this.Entradas)
+            {
+                ingresos += entrada.Costo;
+            }
+            TextWriter escritor = new StreamWriter("reporte.txt");
+            escritor.WriteLine($"atraccion : {this.Nombre}\ncantidad de entradas : {(this.Entradas).Count}\ningresos : {ingresos} pesos");
+            escritor.Close();
+
+        }
     }
 }
-//generar un reporte de costos en cualquier momento del día,, Ver la información del usuario (incluye ver la lista de atracciones a las cuales ha ingresado el usuario y el saldo de la manilla). (Simón)
+//generar un reporte de costos en cualquier momento del día,, Ver la información del usuario (incluye ver la lista de atracciones a las cuales ha ingresado el usuario y el saldo de la manilla). (Simón)registro con el número de ingresos en el día, ingresos por atracción, ingresos económicos por atracción y ingresos económicos totales.

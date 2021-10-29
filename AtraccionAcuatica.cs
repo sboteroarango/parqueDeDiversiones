@@ -20,9 +20,9 @@ namespace ParqueDiversiones
 
         public override void SerUsada(Manilla manilla)
         {
-            if (manilla.Edad >= Limite_edad &&  manilla.Saldo >= Costo && manilla.Estatura >= Limite_estatura)
+            if (manilla.Edad >= this.Limite_edad &&  manilla.Saldo >= this.Costo && manilla.Estatura >= this.Limite_estatura)
             {
-                //puede ingresar:
+            
                 if (manilla.Edad>= 45 && manilla.Edad <=50)
                 {
                     Entrada entrada = new Entrada((int)(this.Costo-(this.Costo*7/100)),manilla);
@@ -36,9 +36,6 @@ namespace ParqueDiversiones
                     manilla.Saldo -= this.Costo;
 
                 }
-                //se crea una entrada, se agrega esa entrada en el que el costo de la entrada va a variar 
-                // si el usuario está entre 45 y 50 años, se le da un descuento del 7% en la atracción acúatica
-                //a esa manilla se le resta ese costo
             }
             else
             {

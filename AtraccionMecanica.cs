@@ -20,7 +20,7 @@ namespace ParqueDiversiones
 
         public override void SerUsada(Manilla manilla)
         {
-            if (manilla.Edad >= Limite_edad &&  manilla.Saldo >= Costo && manilla.Estatura >= Limite_estatura)
+            if (manilla.Edad >= this.Limite_edad &&  manilla.Saldo >= this.Costo && manilla.Estatura >= this.Limite_estatura)
             {
                 int cantidadDeVecesIngresadasDeManilla = 0;
                 foreach (Entrada entrada in this.Entradas)
@@ -31,7 +31,7 @@ namespace ParqueDiversiones
                     }
                     
                 }
-                if(cantidadDeVecesIngresadasDeManilla>2)
+                if(cantidadDeVecesIngresadasDeManilla>=2)
                 {
                     Entrada entrada = new Entrada((int)(this.Costo-(this.Costo*8/100)),manilla);
                     this.Entradas.Add(entrada);

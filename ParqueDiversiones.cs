@@ -15,7 +15,7 @@ namespace ParqueDiversiones
             List<AtraccionAcuatica> listaAtraccionesAcuaticas = AdministradorArchivos.generarAtraccionesAcuaticas();
             List<AtraccionVirtual> listaAtraccionesVirtuales = AdministradorArchivos.generarAtraccionesVirtuales();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
-            //el método de recargar manilla está incompleto
+            
 
             int opcion;
             bool ret;
@@ -304,14 +304,6 @@ namespace ParqueDiversiones
             int saldo = int.Parse(Console.ReadLine());
             return new Manilla(edad,estatura,nombre,saldo);
         }
-        public static void RecargarManilla(List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
-        {
-            Console.WriteLine("Ingrese el nombre del propetario de la manilla : ");
-            string nombre = Console.ReadLine();
-            Console.WriteLine("Ingrese la edad del propetario de la manilla : ");
-            int edad = int.Parse(Console.ReadLine());
-            
-
-        }
+        
     }
 }

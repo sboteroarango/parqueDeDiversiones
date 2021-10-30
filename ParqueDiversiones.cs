@@ -15,8 +15,8 @@ namespace ParqueDiversiones
             List<AtraccionAcuatica> listaAtraccionesAcuaticas = AdministradorArchivos.generarAtraccionesAcuaticas();
             List<AtraccionVirtual> listaAtraccionesVirtuales = AdministradorArchivos.generarAtraccionesVirtuales();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
-            
-
+            List<Manilla> ListaManillasRegi = new List<Manilla>();
+            Manilla prueba = new Manilla(46,1.73f,"Ivan",10000000);
             int opcion;
             bool ret;
 
@@ -47,10 +47,10 @@ namespace ParqueDiversiones
                         RegistrarNuevasAtracciones(listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
                     case 3:
-                        ComprarManilla();
+                        ComprarManilla(ListaManillasRegi);
                         break;
                     case 4:
-               
+                        RecargarManilla(ListaManillasRegi);
                         break;
                     case 5:
                         MostrarInfoAtrac(listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
@@ -59,7 +59,9 @@ namespace ParqueDiversiones
                       
                         break;
                     case 7:
-                    
+                        break;
+                    case 8:
+                        GenerarReporteTotal(listaAtraccionesMecanicas,listaAtraccionesAcuaticas,listaAtraccionesVirtuales);
                         break;
                 }
             }
@@ -292,7 +294,7 @@ namespace ParqueDiversiones
             
 
         }
-        public static Manilla ComprarManilla()
+        public static void ComprarManilla(List<Manilla> ListaManillasRegi)
         {
             Console.WriteLine("Ingrese el nombre del usuario: ");
             string nombre = Console.ReadLine();
@@ -302,8 +304,61 @@ namespace ParqueDiversiones
             float estatura = float.Parse(Console.ReadLine());  
             Console.WriteLine("Ingrese la cantidad a desembolsar a su manilla: ");
             int saldo = int.Parse(Console.ReadLine());
-            return new Manilla(edad,estatura,nombre,saldo);
-        }
+            Manilla manilla = new Manilla(edad,estatura,nombre,saldo);
+            ListaManillasRegi.Add(manilla);
         
+        }
+        public static void RecargarManilla(List<Manilla> ListaManillasRegi)
+        {
+            Console.WriteLine("");
+            for (int i = 0; i < ListaManillasRegi.Count; i++)
+            {
+                Console.WriteLine($"{i+1}. {ListaManillasRegi[i].Nombre_completo} - {ListaManillasRegi[i].Edad} años de edad - {ListaManillasRegi[i].Estatura} metros de estatura - {ListaManillasRegi[i].Saldo} pesos de saldo");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Ingrese la manilla a recargar : ");
+            int indiceDeManilla = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese el saldo a recargar : ");
+            int recargo = int.Parse(Console.ReadLine());
+            ListaManillasRegi[indiceDeManilla-1].Recargar(recargo);
+        }
+    
+        public static void GenerarReporteTotal(List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
+        {
+            Console.WriteLine("el Reporte aparecerá en el archivo reporte.txt");
+            int ingresosTotales = 0;
+            int ingresosEconomicosTotales = 0;
+            foreach (Atraccion atraccion in listaAtraccionesMecanicas)
+            {
+                atraccion.GenerarReporte();
+                ingresosTotales += (atraccion.Entradas).Count;
+                foreach (Entrada entrada in atraccion.Entradas)
+                {
+                    ingresosEconomicosTotales += entrada.Costo;
+                }
+            }
+            foreach (Atraccion atraccion in listaAtraccionesAcuaticas)
+            {
+                atraccion.GenerarReporte();
+                ingresosTotales += (atraccion.Entradas).Count;
+                foreach (Entrada entrada in atraccion.Entradas)
+                {
+                    ingresosEconomicosTotales += entrada.Costo;
+                }
+            }
+            foreach (Atraccion atraccion in listaAtraccionesVirtuales)
+            {
+                atraccion.GenerarReporte();
+                ingresosTotales += (atraccion.Entradas).Count;
+                foreach (Entrada entrada in atraccion.Entradas)
+                {
+                    ingresosEconomicosTotales += entrada.Costo;
+                }
+            }
+            DateTime ahora = DateTime.Now;
+            TextWriter escritor = new StreamWriter("reporte.txt",append:true);
+            escritor.WriteLine($"\nINGRESOS TOTALES : {ingresosTotales}\nINGRESOS ECONÓMICOS TOTALES: {ingresosEconomicosTotales}");
+            escritor.Close();
+        }
     }
 }

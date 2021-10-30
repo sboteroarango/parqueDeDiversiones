@@ -31,7 +31,17 @@ namespace ParqueDiversiones
         public string Nombre_completo { get => nombre_completo; set => nombre_completo = value; }
         public int Saldo {get => saldo; set => saldo = value;}
         
-        
+        public void Recargar(int recargo)
+        {
+            if(recargo >= 0){
+                this.Saldo += recargo;
+            }
+            else
+            {
+                Console.WriteLine("no se puede recargar cantidades negativas");
+            }
+            
+        }
        
     }
 }

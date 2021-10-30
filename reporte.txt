@@ -1,3 +1,41 @@
-atraccion : Flight of the Hippogriff
-cantidad de entradas : 4
-ingresos : 60000 pesos
+
+fecha : sábado, 30 de octubre de 2021 1:57:53 p. m.
+atraccion : Transformer Ride –3D
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 1:57:53 p. m.
+atraccion : Revenge of the Mummy
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 2:00:21 p. m.
+atraccion : Transformer Ride –3D
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 2:00:21 p. m.
+atraccion : Revenge of the Mummy
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 2:02:55 p. m.
+atraccion : Transformer Ride –3D
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 2:02:55 p. m.
+atraccion : Revenge of the Mummy
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 2:17:50 p. m.
+atraccion : Transformer Ride –3D
+cantidad de entradas : 0
+ingresos : 0 pesos
+
+fecha : sábado, 30 de octubre de 2021 2:17:50 p. m.
+atraccion : Revenge of the Mummy
+cantidad de entradas : 0
+ingresos : 0 pesos
+

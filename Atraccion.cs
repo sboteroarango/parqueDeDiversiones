@@ -53,8 +53,9 @@ namespace ParqueDiversiones
             {
                 ingresos += entrada.Costo;
             }
-            TextWriter escritor = new StreamWriter("reporte.txt");
-            escritor.WriteLine($"atraccion : {this.Nombre}\ncantidad de entradas : {(this.Entradas).Count}\ningresos : {ingresos} pesos");
+            DateTime ahora = DateTime.Now;
+            TextWriter escritor = new StreamWriter("reporte.txt",append:true);
+            escritor.WriteLine($"fecha : {ahora.ToString("F")}\natraccion : {this.Nombre}\ncantidad de entradas : {(this.Entradas).Count}\ningresos : {ingresos} pesos\n");
             escritor.Close();
 
         }

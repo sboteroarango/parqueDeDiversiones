@@ -15,6 +15,7 @@ namespace ParqueDiversiones
             List<AtraccionAcuatica> listaAtraccionesAcuaticas = AdministradorArchivos.generarAtraccionesAcuaticas();
             List<AtraccionVirtual> listaAtraccionesVirtuales = AdministradorArchivos.generarAtraccionesVirtuales();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
+            //el método de recargar manilla está incompleto
 
             int opcion;
             bool ret;
@@ -46,7 +47,7 @@ namespace ParqueDiversiones
                         RegistrarNuevasAtracciones(listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
                     case 3:
-                       
+                        ComprarManilla();
                         break;
                     case 4:
                
@@ -109,7 +110,7 @@ namespace ParqueDiversiones
                 
                 Atraccion atraccionManejar;
                 if ((listaAtraccionesMecanicas.Exists(x => x.Codigo == codigoAtrac)) || (listaAtraccionesAcuaticas.Exists(x => x.Codigo == codigoAtrac)) || (listaAtraccionesVirtuales.Exists(x => x.Codigo == codigoAtrac)))
-                //if((listaAtracciones.Exists(x...)) or (listaAtracciones1.Exists(x...))or(listaAtracciones2.Exists(x..)))
+                
                 {
 
                     atraccionManejar = listaAtraccionesMecanicas.Find(x => x.Codigo == codigoAtrac);
@@ -127,6 +128,10 @@ namespace ParqueDiversiones
 
                     ListaEmpleadosRegi.Add(empleadoX);
 
+                }
+                else
+                {
+                    Console.WriteLine("Esta atracción no fue encontrada");
                 }
 
             }
@@ -252,7 +257,6 @@ namespace ParqueDiversiones
             Atraccion atraccionInfo;
 
             if ((listaAtraccionesMecanicas.Exists(x => x.Codigo == codigoAtracInfo)) || (listaAtraccionesAcuaticas.Exists(x => x.Codigo == codigoAtracInfo)) || (listaAtraccionesVirtuales.Exists(x => x.Codigo == codigoAtracInfo)))
-            //if((listaAtracciones.Exists(x...)) or (listaAtracciones1.Exists(x...))or(listaAtracciones2.Exists(x..)))
             {
 
                 atraccionInfo = listaAtraccionesMecanicas.Find(x => x.Codigo == codigoAtracInfo);
@@ -285,6 +289,27 @@ namespace ParqueDiversiones
             {
                 Console.WriteLine("\nEl codigo ingresado no existe.\n");
             }
+            
+
+        }
+        public static Manilla ComprarManilla()
+        {
+            Console.WriteLine("Ingrese el nombre del usuario: ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese la edad del usuario: ");
+            int edad = int.Parse(Console.ReadLine());
+            Console.WriteLine("Ingrese la estatura del usuario en metros (ejemplo : 1,80): ");
+            float estatura = float.Parse(Console.ReadLine());  
+            Console.WriteLine("Ingrese la cantidad a desembolsar a su manilla: ");
+            int saldo = int.Parse(Console.ReadLine());
+            return new Manilla(edad,estatura,nombre,saldo);
+        }
+        public static void RecargarManilla(List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
+        {
+            Console.WriteLine("Ingrese el nombre del propetario de la manilla : ");
+            string nombre = Console.ReadLine();
+            Console.WriteLine("Ingrese la edad del propetario de la manilla : ");
+            int edad = int.Parse(Console.ReadLine());
             
 
         }

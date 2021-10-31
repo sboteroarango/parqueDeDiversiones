@@ -59,6 +59,7 @@ namespace ParqueDiversiones
                         IngresarUsuarioAtraccion(ListaManillasRegi,listaAtraccionesMecanicas,listaAtraccionesAcuaticas,listaAtraccionesVirtuales);
                         break;
                     case 7:
+                        MostrarInfoUsuarios(ListaManillasRegi);
                         break;
                     case 8:
                         GenerarReporteTotal(listaAtraccionesMecanicas,listaAtraccionesAcuaticas,listaAtraccionesVirtuales);
@@ -85,7 +86,7 @@ namespace ParqueDiversiones
             Console.WriteLine("     /      4. Recargar la manilla.                                    \\       ");
             Console.WriteLine("    /       5. Consultar informacion de una atraccion.                  \\      ");
             Console.WriteLine("   /        6. Ingresar a una atraccion.                                 \\     ");
-            Console.WriteLine("  /         7. Ver la informacion del usuario.                            \\    ");
+            Console.WriteLine("  /         7. Ver la informacion de los usuarios.                        \\    ");
             Console.WriteLine(" /          8. Generar reporte final.                                      \\   ");
             Console.WriteLine("/___________________________________________________________________________\\\n ");
 
@@ -310,12 +311,7 @@ namespace ParqueDiversiones
         }
         public static void RecargarManilla(List<Manilla> ListaManillasRegi)
         {
-            Console.WriteLine("");
-            for (int i = 0; i < ListaManillasRegi.Count; i++)
-            {
-                Console.WriteLine($"{i+1}. {ListaManillasRegi[i].Nombre_completo} - {ListaManillasRegi[i].Edad} años de edad - {ListaManillasRegi[i].Estatura} metros de estatura - {ListaManillasRegi[i].Saldo} pesos de saldo");
-            }
-            Console.WriteLine("");
+            MostrarInfoUsuarios(ListaManillasRegi);
             Console.WriteLine("Ingrese la manilla a recargar : ");
             int indiceDeManilla = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese el saldo a recargar : ");
@@ -362,12 +358,7 @@ namespace ParqueDiversiones
         }
         public static void IngresarUsuarioAtraccion(List<Manilla> ListaManillasRegi, List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
         {
-            Console.WriteLine("Usuarios registrados: ");
-            for (int i = 0; i < ListaManillasRegi.Count; i++)
-            {
-                Console.WriteLine($"{i+1}. {ListaManillasRegi[i].Nombre_completo} - {ListaManillasRegi[i].Edad} años de edad - {ListaManillasRegi[i].Estatura} metros de estatura - {ListaManillasRegi[i].Saldo} pesos de saldo");
-            }
-            Console.WriteLine("");
+            MostrarInfoUsuarios(ListaManillasRegi);
             Console.WriteLine("ingrese el usuario que va a usar una atracción : ");
             int indiceDeManilla = int.Parse(Console.ReadLine());
             Console.WriteLine("ingrese código de la atracción a usar : ");
@@ -395,5 +386,15 @@ namespace ParqueDiversiones
 
 
         }
-    }
+        public static void MostrarInfoUsuarios(List<Manilla> ListaManillasRegi)
+        {
+            Console.WriteLine("Usuarios Registrados :");
+            Console.WriteLine("");
+            for (int i = 0; i < ListaManillasRegi.Count; i++)
+            {
+                Console.WriteLine($"{i+1}. {ListaManillasRegi[i].Nombre_completo} - {ListaManillasRegi[i].Edad} años de edad - {ListaManillasRegi[i].Estatura} metros de estatura - {ListaManillasRegi[i].Saldo} pesos de saldo");
+            }
+            Console.WriteLine("");
+        }
+    }   
 }

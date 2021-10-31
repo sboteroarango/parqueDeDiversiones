@@ -16,7 +16,7 @@ namespace ParqueDiversiones
             List<AtraccionVirtual> listaAtraccionesVirtuales = AdministradorArchivos.generarAtraccionesVirtuales();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
             List<Manilla> ListaManillasRegi = new List<Manilla>();
-            Manilla prueba = new Manilla(46,1.73f,"Ivan",10000000);
+            
             int opcion;
             bool ret;
 

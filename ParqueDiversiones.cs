@@ -56,7 +56,7 @@ namespace ParqueDiversiones
                         MostrarInfoAtrac(listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
                     case 6:
-                      
+                        IngresarUsuarioAtraccion(ListaManillasRegi,listaAtraccionesMecanicas,listaAtraccionesAcuaticas,listaAtraccionesVirtuales);
                         break;
                     case 7:
                         break;
@@ -359,6 +359,41 @@ namespace ParqueDiversiones
             TextWriter escritor = new StreamWriter("reporte.txt",append:true);
             escritor.WriteLine($"\nINGRESOS TOTALES : {ingresosTotales}\nINGRESOS ECONÓMICOS TOTALES: {ingresosEconomicosTotales}");
             escritor.Close();
+        }
+        public static void IngresarUsuarioAtraccion(List<Manilla> ListaManillasRegi, List<AtraccionMecanica> listaAtraccionesMecanicas, List<AtraccionAcuatica> listaAtraccionesAcuaticas, List<AtraccionVirtual> listaAtraccionesVirtuales)
+        {
+            Console.WriteLine("Usuarios registrados: ");
+            for (int i = 0; i < ListaManillasRegi.Count; i++)
+            {
+                Console.WriteLine($"{i+1}. {ListaManillasRegi[i].Nombre_completo} - {ListaManillasRegi[i].Edad} años de edad - {ListaManillasRegi[i].Estatura} metros de estatura - {ListaManillasRegi[i].Saldo} pesos de saldo");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("ingrese el usuario que va a usar una atracción : ");
+            int indiceDeManilla = int.Parse(Console.ReadLine());
+            Console.WriteLine("ingrese código de la atracción a usar : ");
+            string codigoAtrac = Console.ReadLine();
+            Atraccion atraccionUsar;
+            if ((listaAtraccionesMecanicas.Exists(x => x.Codigo == codigoAtrac)) || (listaAtraccionesAcuaticas.Exists(x => x.Codigo == codigoAtrac)) || (listaAtraccionesVirtuales.Exists(x => x.Codigo == codigoAtrac))) 
+            {
+                atraccionUsar = listaAtraccionesMecanicas.Find(x => x.Codigo == codigoAtrac);
+                 if (atraccionUsar == null)
+                {
+                    atraccionUsar = listaAtraccionesAcuaticas.Find(x => x.Codigo == codigoAtrac);
+                    if (atraccionUsar == null)
+                    {
+                        atraccionUsar = listaAtraccionesVirtuales.Find(x => x.Codigo == codigoAtrac);
+                    }
+                }
+
+                atraccionUsar.SerUsada(ListaManillasRegi[indiceDeManilla-1]);
+            }
+            else 
+            {
+                Console.WriteLine("no se encontró la atracción");
+            }
+
+
+
         }
     }
 }

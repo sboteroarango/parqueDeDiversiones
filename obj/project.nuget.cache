@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cqkmvf25LMkRtchfsDyZx+CFMvBkwslnqUZUtLZIJRSYmXfi8TrqAt5gjGyWEjsd4MQLRvpMqsB9i2Uut/pApA==",
+  "dgSpecHash": "FYkPIICdXkGcgRzsujaBo1YrcYzb86MzUDgrHBGOoRlP+mfNQgkV724y3b3mVXhFOwCgXQ1wRb2Ok/4uO7hDFQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\FAMILIAR\\Desktop\\SEGUNDO SEMESTRE\\Programación y diseño orientado a objetos\\Parque de Diversiones\\parqueDeDiversiones\\ParqueDiversiones.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\FAMILIAR\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\FAMILIAR\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
-    "C:\\Users\\FAMILIAR\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
-    "C:\\Users\\FAMILIAR\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.17\\microsoft.netcore.app.host.win-x64.3.1.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\ProyectoFinalPOO\\parqueDeDiversiones\\ParqueDiversiones.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

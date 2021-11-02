@@ -7,9 +7,10 @@ namespace ParqueDiversiones
 {
       class LectorTXT : ILector
     {
-       
-       
-        
+    public LectorTXT()
+    {
+
+    }        
        public List<AtraccionMecanica> LeerMecanica()
         {
             string[] lines = File.ReadAllLines("textoAtraccionesMecanicas.txt");

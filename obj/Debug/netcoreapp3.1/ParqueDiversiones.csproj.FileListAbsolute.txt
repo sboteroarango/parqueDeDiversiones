@@ -38,3 +38,4 @@ C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp
 C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.dll
 C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\bin\Debug\netcoreapp3.1\ParqueDiversiones.pdb
 C:\Users\Janus\Desktop\ProyectoFinalPOO\parqueDeDiversiones\obj\Debug\netcoreapp3.1\ParqueDiversiones.genruntimeconfig.cache
+C:\Users\FAMILIAR\Desktop\SEGUNDO SEMESTRE\Programación y diseño orientado a objetos\Parque de Diversiones\parqueDeDiversiones\bin\Debug\netcoreapp3.1\AtraccionesAcuaticas.csv

@@ -11,9 +11,11 @@ namespace ParqueDiversiones
     {
         public static void Main(string[] args)
         {
-            List<AtraccionMecanica> listaAtraccionesMecanicas = AdministradorArchivos.generarAtraccionesMecanicas();
-            List<AtraccionAcuatica> listaAtraccionesAcuaticas = AdministradorArchivos.generarAtraccionesAcuaticas();
-            List<AtraccionVirtual> listaAtraccionesVirtuales = AdministradorArchivos.generarAtraccionesVirtuales();
+            LectorCSV lectorCSV = new LectorCSV();
+            LectorTXT lectorTXT = new LectorTXT();
+            List<AtraccionMecanica> listaAtraccionesMecanicas = lectorCSV.LeerMecanica();
+            List<AtraccionAcuatica> listaAtraccionesAcuaticas = lectorCSV.LeerAcuatica();
+            List<AtraccionVirtual> listaAtraccionesVirtuales = lectorTXT.LeerVirtual();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
             List<Manilla> ListaManillasRegi = new List<Manilla>();
             

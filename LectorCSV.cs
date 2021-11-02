@@ -7,6 +7,10 @@ namespace ParqueDiversiones
 {
     class LectorCSV : ILector
     {
+        public LectorCSV()
+        {
+            
+        }
 
         public List<AtraccionMecanica> LeerMecanica()
         {

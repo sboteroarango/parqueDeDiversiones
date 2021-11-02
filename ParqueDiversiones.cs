@@ -18,6 +18,8 @@ namespace ParqueDiversiones
             List<AtraccionVirtual> listaAtraccionesVirtuales = lectorTXT.LeerVirtual();
             List<Empleado> ListaEmpleadosRegi = new List<Empleado>();
             List<Manilla> ListaManillasRegi = new List<Manilla>();
+
+            
             
             int opcion;
             bool ret;
@@ -42,6 +44,7 @@ namespace ParqueDiversiones
 
                 switch (opcion)
                 {
+
                     case 1:
                         RegistrarEmpleados(ListaEmpleadosRegi, listaAtraccionesMecanicas, listaAtraccionesAcuaticas, listaAtraccionesVirtuales);
                         break;
@@ -68,7 +71,7 @@ namespace ParqueDiversiones
                         break;
                 }
             }
-            while (opcion != 0);
+            while (opcion != 9);
 
 
         }
@@ -90,7 +93,8 @@ namespace ParqueDiversiones
             Console.WriteLine("   /        6. Ingresar a una atraccion.                                 \\     ");
             Console.WriteLine("  /         7. Ver la informacion de los usuarios.                        \\    ");
             Console.WriteLine(" /          8. Generar reporte final.                                      \\   ");
-            Console.WriteLine("/___________________________________________________________________________\\\n ");
+            Console.WriteLine("/           9. Salir.                                                       \\   ");
+            Console.WriteLine("______________________________________________________________________________\n ");
 
 
         }
@@ -305,7 +309,7 @@ namespace ParqueDiversiones
             int edad = int.Parse(Console.ReadLine());
             Console.WriteLine("Ingrese la estatura del usuario en metros (ejemplo : 1,80): ");
             float estatura = float.Parse(Console.ReadLine());  
-            Console.WriteLine("Ingrese la cantidad a desembolsar a su manilla: ");
+            Console.WriteLine("Ingrese la cantidad a depositar a su manilla: ");
             int saldo = int.Parse(Console.ReadLine());
             Manilla manilla = new Manilla(edad,estatura,nombre,saldo);
             ListaManillasRegi.Add(manilla);

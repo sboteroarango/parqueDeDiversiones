@@ -62,4 +62,3 @@ namespace ParqueDiversiones
         
     }
 }
-//generar un reporte de costos en cualquier momento del día,, Ver la información del usuario (incluye ver la lista de atracciones a las cuales ha ingresado el usuario y el saldo de la manilla). (Simón)registro con el número de ingresos en el día, ingresos por atracción, ingresos económicos por atracción y ingresos económicos totales.

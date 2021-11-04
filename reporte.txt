@@ -1,136 +1,63 @@
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Hollywood Rip Ride Rockit
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Flight of the Hippogriff
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : The Incredible  Hulk Coaster
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : The Cat in the Hat
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Popeye & Bluto´s Bilge-Rat Barges
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Dudley Do-Right´s Ripsaw Falls
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : One Fish-Two Fish-Red Fish-Blue Fish
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Krakatau Aqua Coaster
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
-atraccion : Atraccoin
-cantidad de entradas : 1
-ingresos : 10000 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Simpsons Ride
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Revenge of the Mummy
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Harry Potter and the escape from Gringotts
 cantidad de entradas : 0
 ingresos : 0 pesos
 
-fecha : martes, 2 de noviembre de 2021 4:25:50 p. m.
+fecha : jueves, 4 de noviembre de 2021 3:10:33 p. m.
 atraccion : Transformer Ride –3D
 cantidad de entradas : 0
 ingresos : 0 pesos
 
 
-INGRESOS TOTALES : 1
-INGRESOS ECONÓMICOS TOTALES: 10000
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Hollywood Rip Ride Rockit
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Flight of the Hippogriff
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : The Incredible  Hulk Coaster
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : The Cat in the Hat
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Popeye & Bluto´s Bilge-Rat Barges
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Dudley Do-Right´s Ripsaw Falls
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : One Fish-Two Fish-Red Fish-Blue Fish
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Krakatau Aqua Coaster
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Atraccoin
-cantidad de entradas : 1
-ingresos : 10000 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Simpsons Ride
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Revenge of the Mummy
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Harry Potter and the escape from Gringotts
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-fecha : martes, 2 de noviembre de 2021 4:26:41 p. m.
-atraccion : Transformer Ride –3D
-cantidad de entradas : 0
-ingresos : 0 pesos
-
-
-INGRESOS TOTALES : 1
-INGRESOS ECONÓMICOS TOTALES: 10000
+INGRESOS TOTALES : 0
+INGRESOS ECONÓMICOS TOTALES: 0
